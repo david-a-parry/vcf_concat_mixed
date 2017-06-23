@@ -13,7 +13,8 @@ This tool assumes all your VCFs contain the same samples (it will use the header
 Because this writes to STDOUT you will probably want to pipe the output to bgzip to create a compressed VCF
 
     python vcf_concat_mixed.py *.vcf.gz | bgzip -c > output.vcf.gz
-    
-## Author
 
+You will need to install pysam if you haven't already.
+
+## Author
 David A. Parry, University of Edinburgh
